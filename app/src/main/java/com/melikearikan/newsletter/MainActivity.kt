@@ -10,7 +10,7 @@ import com.melikearikan.newsletter.databinding.ActivityMainBinding
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
-    private val splashScreen =10000 // sn'lik splashScreen tanımladık.(açılış ekranı 10 sn sürücek)
+    private val splashScreen =6000 // sn'lik splashScreen tanımladık.(açılış ekranı 10 sn sürücek)
     // private dedim çünkü buna başka sayfadan erişilsin istemiyorum
     lateinit var binding: ActivityMainBinding //binding başlangıç oluşturma
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root) //oncreate yüklendiğinde tasarım sayfamız çalışıcak.
         //splash screen,uygulamamnın logosunu veya mesajını kullanıcıya göstermek için kullanılır çünkü uygulamanın çalışması uzun sürerse(veritabanı işlemleri açılırken çok yoğunsa..)
-        //kullanıcıya bekletmek yerine kullanıcıya açıış ekranında mesajlar verebiliriz.kullanıcının motivasyonunu canlı tutarız,kullanıcı programın donduğunu düşünmez.bi temayı açılış ekranında kullanırız.
+        //kullanıcıya bekletmek yerine kullanıcıya açılış ekranında mesajlar verebiliriz.kullanıcının motivasyonunu canlı tutarız,kullanıcı programın donduğunu düşünmez.bi temayı açılış ekranında kullanırız.
         //yukarıdaki action bar'ı kapatalım çünkü action bar splash screen de kullanılmaz:
         supportActionBar?.hide() //action bar kayboldu.
         // oluşturduğumuz animasyon dosyalarına erişim sağlayalim:
