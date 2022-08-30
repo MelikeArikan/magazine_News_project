@@ -29,7 +29,7 @@
         app:srcCompat="@drawable/img_1" />
 
     <TextView
-        android:id="@+id/başlık"
+        android:id="@+id/baslik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/baslik"
@@ -50,11 +50,12 @@
         android:text="News Haber Ajansı,2000 yılından beri, doğru ve tarafsız haberin tek adresi.sizler için haberin kaynağına ulaşıyor,tarafsız haberleri tarafınıza özenle sunuyoruz."
         android:textAlignment="center"
         android:textSize="23sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintVertical_bias="0.83" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
