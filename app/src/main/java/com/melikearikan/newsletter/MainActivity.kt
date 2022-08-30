@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         val animasyon3 = AnimationUtils.loadAnimation(this,R.anim.animasyon3) // res altındaki anim klasöründeki,animasyon dosyasına erişip onu animasyon1 değişkenine atadık
         // ben bu animasyonları activityMaind'deki tasarım elemanlarımın içeirisine yüklemek istiyorum.
         // ilk olarak tasarım elemanlarımıza erişicez:
-        val imageView = binding.imageView
+        //val imageView = binding.imageView
         val imageView2 = binding.imageView2
         val baslık = binding.baslik
         val aciklama = binding.aciklama
