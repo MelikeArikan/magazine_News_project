@@ -2,10 +2,54 @@ package com.melikearikan.newsletter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.view.ViewGroup
+import android.widget.BaseAdapter
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_main2.*
 
 class MainActivity2 : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+
+
+        var basliklar = arrayListOf<String>()
+        basliklar.add("Thodex vurguncusu yakalandı:")
+        basliklar.add("TEM otoyolunda kaza:")
+        basliklar.add("Zelenski'den Rus askerlerine çağrı:")
+        basliklar.add("Trabzonspor transfer haberi:")
+        basliklar.add("Meteoroloji'den İstanbullulara uyarı:")
+        basliklar.add("ABD'de maymun çiçeğinden ilk ölüm..")
+
+        var aciklamalar = arrayListOf<String>()
+        aciklamalar.add("Arnavutluk polisi, kırmızı bültenle aranan Thodex'in kurucusu Fatih Özer'in Arnavutluk'un Vlora kentinde yakalandığını açıkladı.")
+        aciklamalar.add("Bolu'da TEM Otoyolu'nda tır, hafif ticari araç ve 4 otomobilin karıştığı zincirleme trafik kazasında 8 kişi yaralandı.")
+        aciklamalar.add("6 ayı geride bırakan savaşta korkulan oldu. Ukrayna Zelenski'nin işaret ettiği saldırıya başladı.")
+        aciklamalar.add("Son dakika Trabzonspor transfer haberi! Fırtına Jörgen Strand Larsen'in peşinde")
+        aciklamalar.add("Meteoroloji ve AKOM’dan İstanbul’a art arda yağış uyarısı! İşte son hava durumu tahminleri")
+        aciklamalar.add("ABD'nin Texas eyaletinde maymun çiçeği kaynaklı bir kişi hayatını kaybetti. Vaka, maymun çiçeği bağlantılı ilk ölüm olarak kayıtlara geçti.")
+
+        var gorselDrawableId = arrayListOf<Int>()
+        gorselDrawableId.add(R.drawable.thodex)
+        gorselDrawableId.add(R.drawable.kaza)
+        gorselDrawableId.add(R.drawable.zelensky)
+        gorselDrawableId.add(R.drawable.img_6)
+        gorselDrawableId.add(R.drawable.meteor)
+        gorselDrawableId.add(R.drawable.maymun_cicegi)
+
+        val layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = layoutManager
+        val adapter = haberlerAdapter(basliklar,aciklamalar,gorselDrawableId)
+        recyclerView.adapter = adapter
+
+
+
+
+
+
+
     }
 }
