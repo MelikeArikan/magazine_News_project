@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         //yukarıdaki action bar'ı kapatalım çünkü action bar splash screen de kullanılmaz:
         supportActionBar?.hide() //action bar kayboldu.
         // oluşturduğumuz animasyon dosyalarına erişim sağlayalim:
-        val animasyon1 = AnimationUtils.loadAnimation(this,R.anim.animasyon1) // res altındaki anim klasöründeki,animasyon dosyasına erişip onu animasyon1 değişkenine atadık
+       // val animasyon1 = AnimationUtils.loadAnimation(this,R.anim.animasyon1) // res altındaki anim klasöründeki,animasyon dosyasına erişip onu animasyon1 değişkenine atadık
         val animasyon2 = AnimationUtils.loadAnimation(this,R.anim.animasyon2) // res altındaki anim klasöründeki,animasyon dosyasına erişip onu animasyon1 değişkenine atadık
         val animasyon3 = AnimationUtils.loadAnimation(this,R.anim.animasyon3) // res altındaki anim klasöründeki,animasyon dosyasına erişip onu animasyon1 değişkenine atadık
         // ben bu animasyonları activityMaind'deki tasarım elemanlarımın içeirisine yüklemek istiyorum.
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         val baslık = binding.baslik
         val aciklama = binding.aciklama
         // şimdi tasarım elemanların içerisine oluşturduğum animasyonları aktarıcam:
-        imageView.animation = animasyon1  //imajeView ıd'li tasarım elemanına animasyon1'i ekledik.yani animasyon1 hareketini bana çekmiş olucak.
+       // imageView.animation = animasyon1  //imajeView ıd'li tasarım elemanına animasyon1'i ekledik.yani animasyon1 hareketini bana çekmiş olucak.
         imageView2.animation = animasyon2
         baslık.animation = animasyon3
         aciklama.animation = animasyon3
