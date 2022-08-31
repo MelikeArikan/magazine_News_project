@@ -47,6 +47,7 @@
                 android:text="detaylar"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.melikearikan.newsletter.haberlerAdapter.*
 import kotlinx.android.synthetic.main.haber_kartlari_row.view.*
 
-class haberlerAdapter(var baslik:ArrayList<String>,var aciklama:ArrayList<String>,var gorsel:ArrayList<Int>):RecyclerView.Adapter<haberlerVh>(){
+class haberlerAdapter(var baslik:ArrayList<String>,var aciklama:ArrayList<String>,var gorsel:ArrayList<Int>,var detayResimler:ArrayList<Int>):RecyclerView.Adapter<haberlerVh>(){
     class haberlerVh(itemView: View):RecyclerView.ViewHolder(itemView) {
 
     }
@@ -27,7 +27,7 @@ class haberlerAdapter(var baslik:ArrayList<String>,var aciklama:ArrayList<String
         holder.itemView.imageView3.setImageResource(gorsel.get(position))
         holder.itemView.setOnClickListener {
             val intent =Intent(holder.itemView.context,detayliHaberler::class.java)
-            intent.putExtra("gorsel",gorsel.get(position))
+            intent.putExtra("detayResimler",detayResimler.get(position))
 
             holder.itemView.context.startActivity(intent)
         }

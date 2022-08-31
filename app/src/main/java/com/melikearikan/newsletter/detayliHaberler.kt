@@ -11,6 +11,8 @@ class detayliHaberler : AppCompatActivity() {
         setContentView(R.layout.activity_detayli_haberler)
 
         var intent = intent
+        var detayResimler = intent.getIntExtra("detayResimler",0)
+        haberDetaylari_görseli.setImageResource(detayResimler)
 
 
     }

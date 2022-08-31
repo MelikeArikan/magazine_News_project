@@ -43,9 +43,21 @@ class MainActivity2 : AppCompatActivity() {
         var haberDetaylari = arrayListOf<String>()
         haberDetaylari.add("Arnavutluk İçişleri Bakanı Bledar Çuçi, bugün sabah saatlerinde İçişleri Bakanı Süleyman Soylu’ya kırmızı bültenle aranan Thodex’in kurucusu firari Faruk Fatih Özer'in Arnavutluk Vlora’da yakalandığını ve kimliğinin biyometrik sonuçlar ile de teyit edildiğini iletti.Emniyet Genel Genel Müdürlüğü İnterpol Daire Başkanlığınca Fatih Özer’in Türkiye’ye iadesi işlemlerine başlandı.Öte yandan İçişleri Bakanlığı'ndan, Thodex'in kurucusu Fatih Özer'in iadesiyle ilgili bir açıklama yapıldı.İçişleri Bakanlığından yapılan açıklamada şu ifadelere yer verildi:“Arnavutluk Cumhuriyeti İçişleri Bakanı Bledar Çuçi bugün sabah saatlerinde İçişleri Bakanı Süleyman Soylu’ya Kırmızı Bültenle aranan Thodex’in kurucusu firari Faruk Fatih Özer'in Arnavutluk’ta Vlora’da yakalandığını ve  kimliğinin biyometrik sonuçlar ile teyit edildiğini iletti.Emniyet Genel Genel Müdürlüğü İnterpol Daire Başkanlığınca, Fatih Özer’in Türkiye’ye iadesi işlemlerine başlandı.”")
 
+        var detay_resimler = arrayListOf<Int>()
+        detay_resimler.add(R.drawable.detaylar1)
+        detay_resimler.add(R.drawable.img_8)
+        detay_resimler.add(R.drawable.img_9)
+        detay_resimler.add(R.drawable.img_12)
+        detay_resimler.add(R.drawable.img_10)
+        detay_resimler.add(R.drawable.img_11)
+
+
+
+
+
         val layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
-        val adapter = haberlerAdapter(basliklar,aciklamalar,gorselDrawableId)
+        val adapter = haberlerAdapter(basliklar,aciklamalar,gorselDrawableId,detay_resimler)
         recyclerView.adapter = adapter
 
 
