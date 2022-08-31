@@ -10,7 +10,7 @@ import com.melikearikan.newsletter.databinding.ActivityMainBinding
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
-    private val splashScreen =6000 // sn'lik splashScreen tanımladık.(açılış ekranı 10 sn sürücek)
+    private val splashScreen =6000 // sn'lik splashScreen tanımladık.(açılış ekranı 6 sn sürücek)
     // private dedim çünkü buna başka sayfadan erişilsin istemiyorum
     lateinit var binding: ActivityMainBinding //binding başlangıç oluşturma
     override fun onCreate(savedInstanceState: Bundle?) {

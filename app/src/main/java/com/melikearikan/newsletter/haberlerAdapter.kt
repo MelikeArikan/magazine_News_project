@@ -28,6 +28,7 @@ class haberlerAdapter(var baslik:ArrayList<String>,var aciklama:ArrayList<String
         holder.itemView.setOnClickListener {
             val intent =Intent(holder.itemView.context,detayliHaberler::class.java)
             intent.putExtra("gorsel",gorsel.get(position))
+
             holder.itemView.context.startActivity(intent)
         }
 

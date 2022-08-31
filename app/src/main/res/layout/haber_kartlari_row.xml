@@ -19,6 +19,7 @@
             android:layout_width="274dp"
             android:layout_height="157dp"
             android:layout_weight="1"
+            android:paddingLeft="5dp"
             app:srcCompat="@drawable/thodex" />
 
         <LinearLayout
