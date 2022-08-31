@@ -7,6 +7,22 @@
     android:orientation="vertical"
     tools:context=".detayliHaberler">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolBar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/background"></com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -26,6 +42,7 @@
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
+                android:layout_marginTop="55dp"
                 android:paddingTop="3dp"
                 app:srcCompat="@drawable/detayli_kaza2" />
 
@@ -55,6 +72,7 @@
                 android:id="@+id/haberDetaylari_detaylar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="5dp"
                 android:text="detaylar"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
