@@ -19,22 +19,34 @@
             android:orientation="vertical" >
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/haberDetaylari_görseli"
                 android:layout_width="match_parent"
                 android:layout_height="275dp"
                 app:srcCompat="@drawable/img_8" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/haberDetaylari_basligi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Haber Başlığı" />
+                android:padding="10dp"
+                android:text="Haber Başlığı"
+                android:textColor="@color/purple_700"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img_7" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/haberDetaylari_detaylar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="detaylar"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
