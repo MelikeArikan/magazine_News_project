@@ -28,7 +28,7 @@ class haberlerAdapter(var baslik:ArrayList<String>,var aciklama:ArrayList<String
         holder.itemView.setOnClickListener {
             val intent =Intent(holder.itemView.context,detayliHaberler::class.java)
             intent.putExtra("detayResimler",detayResimler.get(position))
-
+            intent.putExtra("baslık",baslik.get(position))
             holder.itemView.context.startActivity(intent)
         }
 

@@ -47,7 +47,7 @@ class MainActivity2 : AppCompatActivity() {
         detay_resimler.add(R.drawable.detayli_thodex)
         detay_resimler.add(R.drawable.detayli_kaza2)
         detay_resimler.add(R.drawable.img_9)
-        detay_resimler.add(R.drawable.ts)
+        detay_resimler.add(R.drawable.img_12)
         detay_resimler.add(R.drawable.img_10)
         detay_resimler.add(R.drawable.img_11)
 

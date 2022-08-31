@@ -12,7 +12,9 @@ class detayliHaberler : AppCompatActivity() {
 
         var intent = intent
         var detayResimler = intent.getIntExtra("detayResimler",0)
+        var baslik = intent.getStringExtra("baslık")
         imageView4.setImageResource(detayResimler)
+        haberDetaylari_basligi.text = baslik
 
 
     }
