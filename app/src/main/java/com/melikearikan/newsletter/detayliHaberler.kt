@@ -12,7 +12,7 @@ class detayliHaberler : AppCompatActivity() {
 
         var intent = intent
         var detayResimler = intent.getIntExtra("detayResimler",0)
-        haberDetaylari_görseli.setImageResource(detayResimler)
+        imageView4.setImageResource(detayResimler)
 
 
     }
