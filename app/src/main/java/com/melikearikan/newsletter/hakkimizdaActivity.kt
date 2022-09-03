@@ -7,5 +7,7 @@ class hakkimizdaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hakkimizda)
+
+        var intent = intent
     }
 }
