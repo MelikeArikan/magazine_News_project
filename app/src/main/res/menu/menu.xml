@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/hakkimizda" android:title="Hakkımızda" android:icon="@drawable/ic_baseline_person_search_24"></item>
+    <item android:id="@+id/vizyon_ve_misyonumuz" android:title="Vizyon ve Misyonumuz" android:icon="@drawable/ic_baseline_live_tv_24"></item>
+    <item android:id="@+id/iletisim_bilgilerimiz" android:title="İletişim Bilgilerimiz" android:icon="@drawable/ic_baseline_phone_forwarded_24"></item>
+
+</menu>
