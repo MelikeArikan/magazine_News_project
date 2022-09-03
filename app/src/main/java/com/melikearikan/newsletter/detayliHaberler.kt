@@ -1,5 +1,6 @@
 package com.melikearikan.newsletter
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.system.Os.close
@@ -38,9 +39,18 @@ class detayliHaberler : AppCompatActivity() {
 
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.hakkimizda -> Toast.makeText(applicationContext,"Hakkımızda sayfasına gidiliyor..",Toast.LENGTH_LONG).show()
-                R.id.vizyon_ve_misyonumuz -> Toast.makeText(applicationContext,"Vizyon ve Misyonumuz sayfasına gidiliyor..",Toast.LENGTH_LONG).show()
-                R.id.iletisim_bilgilerimiz -> Toast.makeText(applicationContext,"İletişim Bilgilerimiz sayfasına gidiliyor..",Toast.LENGTH_LONG).show()
+                R.id.hakkimizda -> {Toast.makeText(applicationContext,"Hakkımızda sayfasına gidiliyor..",Toast.LENGTH_LONG).show()
+                            var intent =Intent(this,hakkimizdaActivity::class.java)
+                            startActivity(intent)
+                }
+                R.id.vizyon_ve_misyonumuz -> {Toast.makeText(applicationContext,"Vizyon ve Misyonumuz sayfasına gidiliyor..",Toast.LENGTH_LONG).show()
+                            var intent = Intent(this,vizyon_ve_misyonActivity::class.java)
+                            startActivity(intent)
+                }
+                R.id.iletisim_bilgilerimiz -> {Toast.makeText(applicationContext,"İletişim Bilgilerimiz sayfasına gidiliyor..",Toast.LENGTH_LONG).show()
+                            var intent = Intent(this,iletisim_bilgilerimizActivity::class.java)
+                            startActivity(intent)
+                }
             }
             true
         }
