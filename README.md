@@ -1,5 +1,5 @@
 # 'Magazine News' application
-## What is 'Magazin News' project ?
+## What is 'Magazine News' project ?
 Magazine news is an android mobile application project written in Kotlin, which includes magazine news and presents it to the reader.
 #### The magazine news application, its appearance, design and use are as follows:
 (I used my own phone as emulator.)
