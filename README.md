@@ -11,7 +11,7 @@ https://user-images.githubusercontent.com/111872567/189987156-6e3e32ba-1dde-43e9
 ## Features 
 * RecyclerView
 * splashScreen
-* animasyon
+* Animation
 * Navigation Drawer 
 * ScrollView
 * and other basic structures (like Activitys,AppBarLayout,MaterialToolbar,NavigationView,LinearLayout,DrawerLayout,ConstraintLayout...)
